@@ -1,0 +1,70 @@
+{
+  "name": "CopyPastePlusPlus",
+  "displayName": "CopyPastePlusPlus",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "CopyPastePlusPlus.copyFirst",
+        "title": "copyFirst"
+      },
+      {
+        "command": "CopyPastePlusPlus.copySecond",
+        "title": "copySecond"
+      },
+      {
+        "command": "CopyPastePlusPlus.pasteGroup",
+        "title": "pasteGroup"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "ctrl+shift+3",
+        "command": "CopyPastePlusPlus.copyFirst",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+4",
+        "command": "CopyPastePlusPlus.copySecond",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+7",
+        "command": "CopyPastePlusPlus.pasteGroup",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.23.0",
+    "vsce": "^2.15.0"
+  }
+}
