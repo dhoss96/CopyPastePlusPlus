@@ -2,7 +2,10 @@
   "name": "CopyPastePlusPlus",
   "displayName": "CopyPastePlusPlus",
   "description": "",
-  "version": "0.0.1",
+  "license": "MIT",
+  "publisher":"Functio",
+  "icon": "images/icon.png",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.85.0"
   },

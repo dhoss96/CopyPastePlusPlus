@@ -26,6 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
 		editor!.edit(editBuilder => {
 			editBuilder.replace(selectionRange, newText);
 		});
+		vscode.commands.executeCommand('editor.action.formatDocument');
 	});
 	context.subscriptions.push(copyFirstDisposable,copySecondDisposable,posteGroupDisposable);
 }
