@@ -1,7 +1,7 @@
 {
   "name": "CopyPastePlusPlus",
   "displayName": "CopyPastePlusPlus",
-  "description": "",
+  "description": "Copy and Paste Blocks of data wrapping data you want to keep",
   "license": "MIT",
   "publisher": "Functio",
   "icon": "images/icon.png",

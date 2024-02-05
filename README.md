@@ -28,4 +28,4 @@ Please use the issue board [the issue board](https://github.com/dhoss96/CopyPast
 
 ## License
 
-[MIT](LICENSE.md)
+[MIT](LICENSE.txt)
